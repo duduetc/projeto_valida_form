@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/img_undraw.svg" alt="Imagem dos amigos">
+        </div>
+        <div class="form">
+            <form id="formularioCliente">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se!</h1>
+                    </div>
+                    <div class="login-button">
+                        <button>
+                            <a href="surpresa.html" target="_blank">Entrar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstName">Primeiro nome:</label>
+                        <input type="text" name="firstname" id="firstName" placeholder="Digite seu primeiro nome">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="secondName">Sobrenome:</label>
+                        <input type="text" name="secondname" id="secondName" placeholder="Digite seu sobrenome">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Confirme sua senha</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h5>Gênero</h5>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="others">
+                            <label for="others">Outros</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirm-button">
+                    <button onclick="validaCampos()"><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="validaForm.js"></script>
+</body>
+</html>
